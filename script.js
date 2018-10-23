@@ -20,7 +20,7 @@ navigator.mediaDevices.getUserMedia({video: true, audio: true})
 });
 
 peer = new Peer({
-	key: 'bec8e281-f4da-4767-85ee-d3874159a387',
+	key: '084fb3fd-aa38-4399-860a-0d6556715b69',
 	debug: 3
 });
 
