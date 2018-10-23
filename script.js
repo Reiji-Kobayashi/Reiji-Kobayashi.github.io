@@ -1,4 +1,6 @@
 let localStream = null;
+let peer = null;
+let existingCall = null;
 
 navigator.mediaDevices.getUserMedia({video: true, audio: true})
     .then(function (stream) {
@@ -10,9 +12,6 @@ navigator.mediaDevices.getUserMedia({video: true, audio: true})
     console.error('mediaDevice.getUserMedia() error:', error);
     return;
 });
-
-let peer = null;
-let existingCall = null;
 
 navigator.mediaDevices.getUserMedia({video: true, audio: true})
 		    // 省略
