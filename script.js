@@ -61,17 +61,12 @@ function setupCallEventHandlers(call){
 		setupEndCallUI();
 		$('#their-id').text(call.remoteId);
 	});
-    // 省略
-}
 
-function setupCallEventHandlers(call){
-    // 省略
-    call.on('close', function(){
-        removeVideo(call.remoteId);
-        setupMakeCallUI();
-    });
+	call.on('close', function(){
+			removeVideo(call.remoteId);
+			setupMakeCallUI();
+	});
 }
-
 
 function addVideo(call,stream){
     $('#their-video').get(0).srcObject = stream;
