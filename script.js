@@ -1,5 +1,8 @@
-let localStream = null;
+'use strict';
 
+let localStream = null;
+let peer = null;
+let existingCall = null;
 navigator.mediaDevices.getUserMedia({video: true, audio: true})
     .then(function (stream) {
         // Success
@@ -9,14 +12,6 @@ navigator.mediaDevices.getUserMedia({video: true, audio: true})
     // Error
     console.error('mediaDevice.getUserMedia() error:', error);
     return;
-});
-
-let localStream = null;
-let peer = null;
-let existingCall = null;
-
-navigator.mediaDevices.getUserMedia({video: true, audio: true})
-		    // 省略
 });
 
 peer = new Peer({
