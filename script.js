@@ -11,7 +11,6 @@ navigator.mediaDevices.getUserMedia({video: true, audio: true})
     return;
 });
 
-let localStream = null;
 let peer = null;
 let existingCall = null;
 
