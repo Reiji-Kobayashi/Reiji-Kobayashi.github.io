@@ -49,7 +49,7 @@ $(function(){
     });
 
 		$('#stop-call').click(function(){
-        existingCall.send("stop");
+        existingCall.send();
     });
 
     $('#end-call').click(function(){
@@ -78,8 +78,9 @@ $(function(){
             setupMakeCallUI();
         });
 
+				sig=
 				if(call.data()){
-					var sig = call.data()
+					sig = call.data()
 				}
 				$('#room_status').text(sig.data)
     }
