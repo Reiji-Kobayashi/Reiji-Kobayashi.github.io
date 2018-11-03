@@ -14,7 +14,8 @@ navigator.mediaDevices.getUserMedia({video: true, audio: true})
 });
 
 multiparty = new MultiParty({
-	key: '084fb3fd-aa38-4399-860a-0d6556715b69'
+	key: '084fb3fd-aa38-4399-860a-0d6556715b69',
+	debug: 3
 });
 
 multiparty.on('open', function(){
