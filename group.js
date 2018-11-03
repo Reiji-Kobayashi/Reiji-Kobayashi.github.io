@@ -18,7 +18,7 @@ multiparty = new MultiParty({
 });
 
 multiparty.on('open', function(){
-	$('#my-id').text(peer.id);
+	$('#my-id').text(multiparty.id);
 });
 
 multiparty.on('error', function(err){
