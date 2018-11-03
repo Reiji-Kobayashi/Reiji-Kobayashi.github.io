@@ -102,7 +102,7 @@ $(function(){
 
     function setupEndCallUI() {
         $('#make-call').hide();
-				$('#stop-call').hide();
+				$('#stop-call').show();
         $('#end-call').show();
     }
 
