@@ -19,7 +19,7 @@ multiparty = new MultiParty({
 });
 
 multiparty.on('open', function(){
-	$('#my-id').text(myid);
+	$('#my-id').text(multiparty.id);
 });
 
 multiparty.on('error', function(err){
