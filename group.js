@@ -53,9 +53,7 @@ $(function(){
     });
 
 		$('#stop-call').click(function(){
-				if (existingCall==call) {
-					existingCall.send("s");
-				};
+				existingCall.send("s");
     });
 
     function setupCallEventHandlers(call){
@@ -113,6 +111,6 @@ $(function(){
     }
 
 		function dummy(){
-			
+
 		}
 });
