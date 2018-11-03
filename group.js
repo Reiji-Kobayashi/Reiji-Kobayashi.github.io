@@ -56,6 +56,10 @@ $(function(){
         existingCall.close();
     });
 
+		existingCall.data(){
+			$('#room_status').text("stop")
+		}
+
     function setupCallEventHandlers(call){
         if (existingCall) {
             existingCall.close();
