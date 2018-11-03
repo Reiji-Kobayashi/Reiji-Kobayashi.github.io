@@ -49,7 +49,7 @@ $(function(){
     });
 
 		$('#stop-call').click(function(){
-        existingCall.send();
+        existingCall.send("stop");
     });
 
     $('#end-call').click(function(){
@@ -111,6 +111,6 @@ $(function(){
     }
 
 		function dummy(){
-			
+
 		}
 });
