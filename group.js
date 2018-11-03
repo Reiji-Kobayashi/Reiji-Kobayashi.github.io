@@ -79,7 +79,7 @@ $(function(){
             setupMakeCallUI();
         });
 
-				call.on('data', function(){
+				peer.connect.on('data', function(){
 					$('#room_status').text("STOP");
 				});
     }
