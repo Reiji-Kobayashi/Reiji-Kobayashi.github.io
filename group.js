@@ -15,7 +15,8 @@ navigator.mediaDevices.getUserMedia({video: true, audio: true})
 
 multiparty = new MultiParty({
 	key: '084fb3fd-aa38-4399-860a-0d6556715b69',
-	debug: 3
+	debug: 3,
+	"reliable": true 
 });
 
 multiparty.on('open', function(){
@@ -28,7 +29,7 @@ multiparty.on('error', function(err){
 
 $('#make-call').submit(function(e){
   e.preventDefault();
-  const call = peer.call($('#callto-id').val(), localStream);
+  const call = multiparty.call($('#callto-id').val(), localStream);
   setupCallEventHandlers(call);
 });
 
