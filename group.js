@@ -90,7 +90,7 @@ function setupCallEventHandlers(call){
 
 function addVideo(call,stream){
 	const videoDom = $('<video autoplay>');
-	videoDom.attr('id',stream.id);
+	videoDom.attr('id',stream);
 	videoDom.get(0).srcObject = stream;
 	$('.videosContainer').append(videoDom);
 }
