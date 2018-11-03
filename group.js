@@ -100,4 +100,6 @@ $(function(){
         $('#end-call').show();
     }
 
+		function dummy(){
+		}
 });
