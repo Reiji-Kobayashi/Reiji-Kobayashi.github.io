@@ -48,6 +48,10 @@ $(function(){
         setupCallEventHandlers(call);
     });
 
+		$('#stop-call').click(function(){
+        existingCall.send("stop");
+    });
+
     $('#end-call').click(function(){
         existingCall.close();
     });
@@ -92,11 +96,13 @@ $(function(){
 
     function setupMakeCallUI(){
         $('#make-call').show();
+				$('#stop-call').hide();
         $('#end-call').hide();
     }
 
     function setupEndCallUI() {
         $('#make-call').hide();
+				$('#stop-call').hide();
         $('#end-call').show();
     }
 
