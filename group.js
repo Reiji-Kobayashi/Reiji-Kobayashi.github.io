@@ -111,6 +111,5 @@ $(function(){
     }
 
 		function dummy(){
-
 		}
 });
