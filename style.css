@@ -38,12 +38,6 @@ Copyright (c) Nicolas Gallagher and Jonathan Neal
     -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
 }
 
-#myStream{
-    margin-top: 15px;
-    width: auto;
-    height: 300px;
-    background-color: #eee;
-}
 
 #my-video{
     margin-top: 15px;
