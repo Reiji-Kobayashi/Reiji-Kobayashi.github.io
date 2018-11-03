@@ -48,12 +48,12 @@ $(function(){
         setupCallEventHandlers(call);
     });
 
-		$('#stop-call').click(function(){
-        call.send();
-    });
-
     $('#end-call').click(function(){
         existingCall.close();
+    });
+
+		$('#stop-call').click(function(){
+        call.send();
     });
 
     function setupCallEventHandlers(call){
