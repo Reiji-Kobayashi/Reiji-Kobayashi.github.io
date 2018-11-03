@@ -53,7 +53,9 @@ $(function(){
     });
 
 		$('#stop-call').click(function(){
-        call.send("s");
+				if (existingCall==call) {
+					existingCall.send("s");
+				};
     });
 
     function setupCallEventHandlers(call){
