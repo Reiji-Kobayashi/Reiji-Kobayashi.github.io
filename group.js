@@ -79,8 +79,8 @@ $(function(){
             setupMakeCallUI();
         });
 
-				call.on('data', function(){
-            $('#room-status').text("stop");
+				call.on('data', function(data){
+            $('#room-status').text(data.data);
         });
     }
 
