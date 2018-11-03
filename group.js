@@ -52,7 +52,7 @@ $(function(){
         existingCall.close();
     });
 
-		$('#stop-call').click(function(){
+		$('#stop-button').click(function(){
 			console.log('stop call')
 				existingCall.send("s");
     });
