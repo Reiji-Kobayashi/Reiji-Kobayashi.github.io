@@ -53,8 +53,7 @@ $(function(){
     });
 
 		$('#stop-call').click(function(){
-				var data = 0
-        peer.connect.send(data);
+        call.send("s");
     });
 
     function setupCallEventHandlers(call){
@@ -79,9 +78,9 @@ $(function(){
             setupMakeCallUI();
         });
 
-				peer.connect.on('data', function(){
-					$('#room_status').text("STOP");
-				});
+				call.on('data', function(){
+            $('#room-status').text("stop");
+        });
     }
 
     function addVideo(stream){
