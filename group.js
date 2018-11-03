@@ -56,10 +56,6 @@ $(function(){
         existingCall.close();
     });
 
-		existingCall.data(){
-			$('#room_status').text("stop")
-		}
-
     function setupCallEventHandlers(call){
         if (existingCall) {
             existingCall.close();
@@ -81,6 +77,8 @@ $(function(){
             removeAllRemoteVideos();
             setupMakeCallUI();
         });
+
+				$('#room_status').text(call.data.data)
     }
 
     function addVideo(stream){
