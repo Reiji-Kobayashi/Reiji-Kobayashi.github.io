@@ -112,3 +112,6 @@ function setupEndCallUI() {
     $('#make-call').hide();
     $('#end-call').show();
 }
+
+function dummy(){
+}
