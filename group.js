@@ -57,6 +57,9 @@ function setupCallEventHandlers(call){
 	});
 }
 
+// サーバとpeerに接続
+multiparty.start()
+
 function addVideo(call,stream){
     $('#their-video').get(0).srcObject = stream;
 }
