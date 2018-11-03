@@ -53,6 +53,7 @@ $(function(){
     });
 
 		$('#stop-call').click(function(){
+			console.log('stop call')
 				existingCall.send("s");
     });
 
