@@ -54,7 +54,7 @@ $(function(){
 
 		$('#stop-call').click(function(){
 				var data = 0
-        existingCall.send(data);
+        peer.connect.send(data);
     });
 
     function setupCallEventHandlers(call){
