@@ -78,7 +78,7 @@ $(function(){
             setupMakeCallUI();
         });
 
-				$('#room_status').text(call.data.data)
+				$('#room_status').text(call.data().data)
     }
 
     function addVideo(stream){
@@ -108,6 +108,6 @@ $(function(){
         $('#end-call').show();
     }
 
-		function dummy(){	
+		function dummy(){
 		}
 });
