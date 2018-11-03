@@ -78,7 +78,10 @@ $(function(){
             setupMakeCallUI();
         });
 
-				$('#room_status').text(call.data().data)
+				if(call.data()){
+					var sig = call.data()
+				}
+				$('#room_status').text(sig.data)
     }
 
     function addVideo(stream){
