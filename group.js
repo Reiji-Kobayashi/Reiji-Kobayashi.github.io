@@ -48,7 +48,7 @@ $(function(){
         setupCallEventHandlers(call);
     });
 
-    $('#end-call').click(function(){
+    $('#end-button').click(function(){
         existingCall.close();
     });
 
