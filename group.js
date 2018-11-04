@@ -96,8 +96,8 @@ $(function(){
     }
 
 		function getVideos(){
-				$('.videosContainer').find('.video').each(function( index, value ) {
-					  var id = $(this).attr('class', 'sample');
+				$('.videosContainer').each(function( index, value ) {
+					  var id = value.attr("id");
 						console.log(id);
 				});
     }
