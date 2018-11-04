@@ -98,9 +98,9 @@ $(function(){
 		function pouseVideos(id){
 			$('.videosContainer video').each(function(i, elem) {
 			  elem.muted=true;
+				console.log("pouse");
 			});
 			$('#'+id).muted=false;
-			console.log("pouse")
 		}
 
     function removeAllRemoteVideos(){
