@@ -102,8 +102,6 @@ $(function(){
         }
     }
 
-    }
-
     function removeAllRemoteVideos(){
         $('.videosContainer').empty();
     }
