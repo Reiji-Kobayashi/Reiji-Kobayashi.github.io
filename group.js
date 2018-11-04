@@ -80,7 +80,7 @@ $(function(){
 
 				call.on('data', function(data){
             $('#room-status').text(data.data);
-						$('#'+data.src).remove();
+						getVideos();
         });
     }
 
@@ -93,6 +93,11 @@ $(function(){
 
     function removeVideo(peerId){
         $('#'+peerId).remove();
+    }
+
+		function getVideos(){
+        var id=$('.videosContainer').id;
+				console.log(id);
     }
 
     function removeAllRemoteVideos(){
