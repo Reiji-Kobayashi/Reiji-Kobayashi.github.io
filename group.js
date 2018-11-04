@@ -88,7 +88,7 @@ $(function(){
         const videoDom = $('<video autoplay>');
         videoDom.attr('id',stream.peerId);
         videoDom.get(0).srcObject = stream;
-        $('videosContainer').append(videoDom);
+        $('.videosContainer').append(videoDom);
     }
 
     function removeVideo(peerId){
@@ -96,7 +96,7 @@ $(function(){
     }
 
 		function getVideos(){
-        var childs = $('videosContainer').children;
+        var childs = $('.videosContainer').children;
 				console.log(childs.length);
     }
 
