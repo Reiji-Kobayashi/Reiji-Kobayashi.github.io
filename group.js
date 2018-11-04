@@ -96,7 +96,7 @@ $(function(){
     }
 
 		function getVideos(){
-				var childs=window.document.getElementById('.videosContainer').children;
+				var childs=$('.videosContainer').children;
 				for (var i=0; i<childs.length; i++) {
 					console.log(childs[i].nodeName);
 				}
