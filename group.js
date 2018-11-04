@@ -97,7 +97,7 @@ $(function(){
     }
 
 		function pouseVideos(id){
-				$('.videosContainer').find("#"+id).css('height', '0px');
+				$('.videosContainer').find('#'+id).css('height', '0px');
 				console.log("pouse")
 		}
 
