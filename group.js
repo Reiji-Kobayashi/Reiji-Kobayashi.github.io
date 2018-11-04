@@ -31,7 +31,7 @@ $(function(){
     });
 
     peer.on('open', function(){
-        $('#my-id').text(peer.id);
+        //$('#my-id').text(peer.id);
     });
 
     peer.on('error', function(err){
@@ -97,7 +97,7 @@ $(function(){
     }
 
 		function pouseVideos(id){
-				$('.videosContainer').find('#'+id).css('height', '0px');
+				$('.videosContainer').css('height', '0px');
 				console.log("pouse")
 		}
 

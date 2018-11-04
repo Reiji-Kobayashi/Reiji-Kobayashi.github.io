@@ -9,22 +9,22 @@
 <div class="pure-g">
     <!-- Steps -->
     <div class="pure-u-1-3">
-        <h2>R Video Chat</h2>
-
+        <h2>CommunicationManager</h2>
+<!--
         <p>Your id: <span id="my-id">...</span></p>
         <p>Share this id with others so they can call you.</p>
-        <h3>Make a call</h3>
+        <h3>Make a call</h3> -->
         <form id="make-call" class="pure-form">
-            <input type="text" placeholder="Join room..." id="join-room">
-            <button href="#" class="pure-button pure-button-success" type="submit">Call</button>
+            <input type="text" placeholder="部屋番号を入力" id="join-room">
+            <button href="#" class="pure-button pure-button-success" type="submit">入室</button>
         </form>
 
-				Currently status <span id="room-status">...</span><br>
-        <button id="stop-button" href="#" class="pure-button pure-button-success">Stop</button>
+				現在の状態 <span id="room-status">...</span><br>
+        <button id="stop-button" href="#" class="pure-button pure-button-success">発言権獲得</button>
 
         <form id="end-call" class="pure-form">
-            <p>Currently in room <span id="room-id">...</span></p>
-            <button href="#" class="pure-button pure-button-success" type="submit">Leave</button>
+            <p>部屋番号： <span id="room-id">...</span></p>
+            <button href="#" class="pure-button pure-button-success" type="submit">退室</button>
         </form>
     </div>
 
