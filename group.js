@@ -97,7 +97,7 @@ $(function(){
 
 		function getVideos(){
 				$('.videosContainer').each(function( index, value ) {
-					  var id = value.attr("id");
+					  var id = $(this).attr("id");
 						console.log(id);
 				});
     }
