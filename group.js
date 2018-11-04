@@ -93,12 +93,14 @@ $(function(){
 
     function removeVideo(peerId){
         $('#'+peerId).remove();
-
     }
 
 		function pouseVideos(id){
-				$('.videosContainer').css('height', '0px');
-				console.log("pouse")
+			$('.videosContainer video').each(function(i, elem) {
+			  elem.muted=true;
+			});
+			$('#'+peerId).muted=false;
+			console.log("pouse")
 		}
 
     function removeAllRemoteVideos(){
