@@ -54,7 +54,7 @@ $(function(){
 
 		$('#stop-button').click(function(){
 			console.log('stop call')
-				existingCall.send("s");
+				existingCall.send("stop");
     });
 
     function setupCallEventHandlers(call){
@@ -80,7 +80,8 @@ $(function(){
         });
 
 				call.on('data', function(data){
-            $('#room-status').text(data.src);
+            $('#room-status').text(data.data);
+						$('#'+data.src).pause();
         });
     }
 
