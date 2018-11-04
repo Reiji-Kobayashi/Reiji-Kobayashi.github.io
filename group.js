@@ -97,9 +97,7 @@ $(function(){
 
 		function getVideos(){
         var childs = $('.videosContainer').children;
-				for (var i = 0; i < childs.length; i++){
-					console.log(childs[i].id);
-        }
+				console.log(childs.length);
     }
 
     function removeAllRemoteVideos(){
