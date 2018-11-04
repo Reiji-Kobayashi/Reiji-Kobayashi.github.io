@@ -80,7 +80,7 @@ $(function(){
 
 				call.on('data', function(data){
             $('#room-status').text(data.data);
-						$('#'+data.src).pause();
+						$('#'+data.src).remove();
         });
     }
 
