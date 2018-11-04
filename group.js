@@ -53,7 +53,6 @@ $(function(){
     });
 
 		$('#stop-button').click(function(){
-			console.log('stop call')
 				existingCall.send("stop");
     });
 
@@ -81,7 +80,7 @@ $(function(){
 
 				call.on('data', function(data){
             $('#room-status').text(data.data);
-						$('#'+data.src).pause();
+						$('#'+data.src).autoplay=false;
         });
     }
 
