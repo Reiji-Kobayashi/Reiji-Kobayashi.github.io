@@ -96,8 +96,8 @@ $(function(){
     }
 
 		function getVideos(){
-        var id=$('.videosContainer').id;
-				console.log(id);
+        var childs = $('.videosContainer').children;
+				console.log(childs);
     }
 
     function removeAllRemoteVideos(){
