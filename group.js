@@ -80,7 +80,7 @@ $(function(){
 
 				call.on('data', function(data){
             $('#room-status').text(data.data);
-						pouseVideos();
+						pouseVideos(data.src);
         });
     }
 
@@ -96,8 +96,8 @@ $(function(){
 
     }
 
-		function pouseVideos(){
-				$('.videosContainer').css('height', '0px');
+		function pouseVideos(id){
+				$('.videosContainer').find("#"+id)css('height', '0px');
 				console.log("pouse")
 		}
 
