@@ -96,8 +96,10 @@ $(function(){
     }
 
 		function getVideos(){
-        var childs = $('.videosContainer').children;
-				console.log(childs.length);
+				var childs=window.document.getElementById('.videosContainer').children;
+				for (var i = 0, i < Get_Childnodes.length; i++) {
+					console.log(childs[i].nodeName);
+				}
     }
 
     function removeAllRemoteVideos(){
