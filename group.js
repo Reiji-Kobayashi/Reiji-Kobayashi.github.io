@@ -88,7 +88,7 @@ $(function(){
         const videoDom = $('<video autoplay>');
         videoDom.attr('id',stream.peerId);
         videoDom.get(0).srcObject = stream;
-        $('videosContainer').append(videoDom);
+        $('.videosContainer').append(videoDom);
     }
 
     function removeVideo(peerId){
@@ -96,14 +96,14 @@ $(function(){
     }
 
 		function getVideos(){
-				$('videosContainer input[type="video"]').each(function( index, value ) {
-					  var id = $(this).attr("id");
-						console.log(id);
+				$('.videosContainer').each(function( index, value ) {
+					  var id2 = $(this).attr('id');
+						console.log(id2);
 				});
     }
 
     function removeAllRemoteVideos(){
-        $('videosContainer').empty();
+        $('.videosContainer').empty();
     }
 
     function setupMakeCallUI(){
