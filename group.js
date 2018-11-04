@@ -96,7 +96,7 @@ $(function(){
     }
 
 		function getVideos(){
-				$('.videosContainer').each(function( index, value ) {
+				$('.videosContainer input[type="video"]').each(function( index, value ) {
 					  var id = $(this).attr("id");
 						console.log(id);
 				});
