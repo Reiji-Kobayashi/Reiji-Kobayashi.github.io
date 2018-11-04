@@ -111,14 +111,16 @@ $(function(){
         $('#make-call').show();
 				$('#text-status').hide();
 				$('#stop-button').hide();
-        $('#end-call').hide();
+				$('#text-room').show();
+        $('#end-button').hide();
     }
 
     function setupEndCallUI() {
         $('#make-call').hide();
 				$('#text-status').show();
 				$('#stop-button').show();
-				$('#end-call').show();
+				$('#text-room').show();
+				$('#end-button').show();
     }
 
 		function dummy(){
