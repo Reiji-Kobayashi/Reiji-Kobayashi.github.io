@@ -98,7 +98,7 @@ $(function(){
 
 		function pouseVideos(){
 				$('.videosContainer').css('height', '0px');
-				console("pouse")
+				console.log("pouse")
 		}
 
     function removeAllRemoteVideos(){
