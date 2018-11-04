@@ -96,9 +96,10 @@ $(function(){
     }
 
 		function getVideos(){
-				var childs=$('.videosContainer').children;
+				var childs=$('.videosContainer').children("video");
 				for (var i=0; i<childs.length; i++) {
-					console.log(childs[i].id);
+					var id = childs[i].attr('id');
+					console.log(id);
 				}
     }
 
