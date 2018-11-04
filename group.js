@@ -80,7 +80,7 @@ $(function(){
 
 				call.on('data', function(data){
             $('#room-status').text(data.data);
-						getVideos();
+						pouseVideos();
         });
     }
 
@@ -95,12 +95,10 @@ $(function(){
         $('#'+peerId).remove();
     }
 
-		function getVideos(){
-				$('.videosContainer').each(function( index, value ) {
-					  var id2 = $(this).attr('id');
-						console.log(id2);
-				});
-    }
+		function pouseVideos(){
+				$('.videosContainer').css('height', '0px');
+
+		}
 
     function removeAllRemoteVideos(){
         $('.videosContainer').empty();
