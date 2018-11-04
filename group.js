@@ -99,7 +99,7 @@ $(function(){
 			$('.videosContainer video').each(function(i, elem) {
 			  elem.muted=true;
 			});
-			$('#'+peerId).muted=false;
+			$('#'+id).muted=false;
 			console.log("pouse")
 		}
 
