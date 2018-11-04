@@ -31,7 +31,7 @@ $(function(){
     });
 
     peer.on('open', function(){
-        //$('#my-id').text(peer.id);
+        $('#my-id').text(peer.id);
     });
 
     peer.on('error', function(err){
