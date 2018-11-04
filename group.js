@@ -96,11 +96,10 @@ $(function(){
     }
 
 		function getVideos(){
-				var childs=$('.videosContainer').children("video");
-				for (var i=0; i<childs.length; i++) {
-					var id = childs[i].attr('id');
-					console.log(id);
-				}
+				$('.videosContainer').find('.video').each(function( index, value ) {
+					  var id = $(this).attr('class', 'sample');
+						console.log(id);
+				});
     }
 
     function removeAllRemoteVideos(){
